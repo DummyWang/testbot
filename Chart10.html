@@ -1,0 +1,223 @@
+﻿<html>
+<head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load("current", { packages: ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart1);
+        google.charts.setOnLoadCallback(drawChart2);
+        google.charts.setOnLoadCallback(drawChart3);
+        google.charts.setOnLoadCallback(drawChart4);
+        google.charts.setOnLoadCallback(drawChart5);
+        google.charts.setOnLoadCallback(drawChart6);
+        google.charts.setOnLoadCallback(drawChart7);
+        google.charts.setOnLoadCallback(drawChart8);
+        google.charts.setOnLoadCallback(drawChart9);
+
+
+        //Chart1
+        function drawChart1() {
+            var data = google.visualization.arrayToDataTable([
+                ['Day', 'VOL', { role: 'style' }],
+                ['D10',-430,'green'],['D9',-255,'green'],['D8',141,'red'],['D7',427,'red'],['D6',-1202,'green'],['D5',-166,'green'],['D4',-580,'green'],['D3',127,'red'],['D2',-1206,'green'],['D1',-6,'green']
+            ]);
+
+
+            var options = {
+                title: '外資',
+                width: 200,
+                height: 150,
+                bar: { groupWidth: '90%' },
+                legend: { position: 'none' },
+            };
+            var chart = new google.visualization.ColumnChart(document.getElementById('Chart1_Div'));
+
+            chart.draw(data , options);
+        }
+
+        //Chart2
+        function drawChart2() {
+            var data = google.visualization.arrayToDataTable([
+                ['Day', 'VOL', { role: 'style' }],
+                ['D10',-70,'green'],['D9',-185,'green'],['D8',-10,'green'],['D7',-10,'green'],['D6',0,'green'],['D5',-25,'green'],['D4',-8,'green'],['D3',0,'green'],['D2',-38,'green'],['D1',0,'green']
+            ]);
+
+
+            var options = {
+                title: '投信',
+                width: 200,
+                height: 150,
+                bar: { groupWidth: '90%' },
+                legend: { position: 'none' },
+            };
+            var chart = new google.visualization.ColumnChart(document.getElementById('Chart2_Div'));
+
+            chart.draw(data, options);
+        }
+
+        //Chart3
+        function drawChart3() {
+            var data = google.visualization.arrayToDataTable([
+                ['Day', 'VOL', { role: 'style' }],
+              ['D10',39,'red'],['D9',297,'red'],['D8',-211,'green'],['D7',-144,'green'],['D6',15,'red'],['D5',-63,'green'],['D4',24,'red'],['D3',-199,'green'],['D2',282,'red'],['D1',-207,'green']
+            ]);
+
+
+            var options = {
+                title: '避險',
+                width: 200,
+                height: 150,
+                bar: { groupWidth: '90%' },
+                legend: { position: 'none' },
+            };
+            var chart = new google.visualization.ColumnChart(document.getElementById('Chart3_Div'));
+
+            chart.draw(data, options);
+        }
+        //Chart4
+        function drawChart4() {
+            var data = google.visualization.arrayToDataTable([
+                ['Day', 'VOL', { role: 'style' }],
+                ['D10',-491,'green'],['D9',-298,'green'],['D8',-80,'green'],['D7',128,'red'],['D6',-1292,'green'],['D5',-263,'green'],['D4',-564,'green'],['D3',-110,'green'],['D2',-935,'green'],['D1',-246,'green']
+            ]);
+
+
+            var options = {
+                title: '法人',
+                width: 200,
+                height: 150,
+                bar: { groupWidth: '90%' },
+                legend: { position: 'none' },
+            };
+            var chart = new google.visualization.ColumnChart(document.getElementById('Chart4_Div'));
+
+            chart.draw(data, options);
+        }
+
+        //Chart5
+        function drawChart5() {
+            var data = google.visualization.arrayToDataTable([
+                ['Day', 'VOL', { role: 'style' }],
+              ['D10',-653,'green'],['D9',-850,'green'],['D8',-559,'green'],['D7',323,'red'],['D6',-695,'green'],['D5',-540,'green'],['D4',-513,'green'],['D3',-592,'green'],['D2',-1067,'green'],['D1',-226,'green']
+            ]);
+
+
+            var options = {
+                title: '控盤',
+                width: 200,
+                height: 150,
+                bar: { groupWidth: '90%' },
+                legend: { position: 'none' },
+            };
+            var chart = new google.visualization.ColumnChart(document.getElementById('Chart5_Div'));
+
+            chart.draw(data, options);
+        }
+
+        //Chart6
+        function drawChart6() {
+            var data = google.visualization.arrayToDataTable([
+                ['Day', 'VOL', { role: 'style' }],
+              ['D10',416,'red'],['D9',752,'red'],['D8',435,'red'],['D7',-90,'green'],['D6',481,'red'],['D5',543,'red'],['D4',387,'red'],['D3',418,'red'],['D2',762,'red'],['D1',218,'red']
+            ]);
+
+
+            var options = {
+                title: '散戶',
+                width: 200,
+                height: 150,
+                bar: { groupWidth: '90%' },
+                legend: { position: 'none' },
+            };
+            var chart = new google.visualization.ColumnChart(document.getElementById('Chart6_Div'));
+
+            chart.draw(data, options);
+        }
+
+        //Chart7
+        function drawChart7() {
+            var data = google.visualization.arrayToDataTable([
+                ['Day', 'VOL', { role: 'style' }],
+               ['D10',71,'red'],['D9',-168,'green'],['D8',87,'red'],['D7',-198,'green'],['D6',117,'red'],['D5',-64,'green'],['D4',-39,'green'],['D3',-102,'green'],['D2',246,'red'],['D1',71,'red']
+            ]);
+
+
+            var options = {
+                title: '融資',
+                width: 200,
+                height: 150,
+                bar: { groupWidth: '90%' },
+                legend: { position: 'none' },
+            };
+            var chart = new google.visualization.ColumnChart(document.getElementById('Chart7_Div'));
+
+            chart.draw(data, options);
+        }
+        //Chart8
+        function drawChart8() {
+            var data = google.visualization.arrayToDataTable([
+                ['Day', 'VOL', { role: 'style' }],
+               ['D10',-151,'green'],['D9',-193,'green'],['D8',-143,'green'],['D7',6,'red'],['D6',-110,'green'],['D5',-132,'green'],['D4',-105,'green'],['D3',-114,'green'],['D2',-210,'green'],['D1',-88,'green']
+            ]);
+
+
+            var options = {
+                title: '派收',
+                width: 200,
+                height: 150,
+                bar: { groupWidth: '90%' },
+                legend: { position: 'none' },
+            };
+            var chart = new google.visualization.ColumnChart(document.getElementById('Chart8_Div'));
+
+            chart.draw(data, options);
+        }
+
+        function drawChart9() {
+            var data = google.visualization.arrayToDataTable([
+                ['Day', 'value', { role: 'style' }],
+               [-10,-1,'green'],[-9,-1,'green'],[-8,-1,'green'],[-7,-1,'red'],[-6,-1,'green'],[-5,-1,'green'],[-4,-1,'green'],[-3,-1,'green'],[-2,-1,'green'],[-1,-1,'green'],[-10,-2,'green'],[-9,-2,'green'],[-8,-2,'green'],[-7,-2,'green'],[-6,-2,'green'],[-5,-2,'green'],[-4,-2,'green'],[-3,-2,'green'],[-2,-2,'green'],[-1,-2,'green'],[-10,-3,'green'],[-9,-3,'green'],[-8,-3,'green'],[-7,-3,'green'],[-6,-3,'green'],[-5,-3,'green'],[-4,-3,'green'],[-3,-3,'green'],[-2,-3,'green'],[-1,-3,'green'],[-10,-4,'green'],[-9,-4,'green'],[-8,-4,'green'],[-7,-4,'green'],[-6,-4,'green'],[-5,-4,'green'],[-4,-4,'green'],[-3,-4,'green'],[-2,-4,'green'],[-1,-4,'green'],[-10,-5,'red'],[-9,-5,'red'],[-8,-5,'red'],[-7,-5,'red'],[-6,-5,'red'],[-5,-5,'red'],[-4,-5,'green'],[-3,-5,'red'],[-2,-5,'green'],[-1,-5,'green'] 
+            ]);
+
+
+            var options = {
+                title: '主力密度',
+                width: 400,
+                height: 150,
+                hAxis: { title: 'Day', minValue: -10, maxValue: 0 },
+                vAxis: { title: 'Star' },
+                legend: 'none'
+            };
+
+
+            var chart = new google.visualization.ScatterChart(document.getElementById('Chart9_Div'));
+
+            chart.draw(data, options);
+        }
+
+    </script>
+</head>
+<body>
+    <table class="columns">
+        <tr>
+            <td><div id="Chart1_Div" style="border: 1px solid #ccc"></div></td>
+            <td><div id="Chart5_Div" style="border: 1px solid #ccc"></div></td>
+        </tr>
+        <tr>
+            <td><div id="Chart2_Div" style="border: 1px solid #ccc"></div></td>
+            <td><div id="Chart6_Div" style="border: 1px solid #ccc"></div></td>
+        </tr>
+        <tr>
+            <td><div id="Chart3_Div" style="border: 1px solid #ccc"></div></td>
+            <td><div id="Chart7_Div" style="border: 1px solid #ccc"></div></td>
+        </tr>
+        <tr>
+            <td><div id="Chart4_Div" style="border: 1px solid #ccc"></div></td>
+            <td><div id="Chart8_Div" style="border: 1px solid #ccc"></div></td>
+        </tr>
+        <tr>
+            <td colspan="2"><div id="Chart9_Div" style="border: 1px solid #ccc"></div></td>
+           
+        </tr>
+    </table>
+</body>
+</html>
